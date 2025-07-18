@@ -1,0 +1,79 @@
+{
+  "lang": "Français",
+  "home": {
+    "slogan": "Le puzzle du jour et les réponses récentes"
+  },
+  "Header": {
+    "headerTitle": "Connections hint",
+    "home": "Accueil",
+    "blog": "Blog",
+    "tags": "Tags",
+    "games": "Jeu",
+    "Menu": "Menu",
+    "about": "À propos",
+    "privacy": "Confidentialité"
+  },
+  "common": {
+    "theme": "Thème",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système"
+  },
+  "notfound": {
+    "description": "Mais ne vous inquiétez pas, vous pouvez trouver beaucoup d'autres choses sur notre page d'accueil.",
+    "title": "Désolé, nous n'avons pas trouvé cette page.",
+    "back": "Retour à l'accueil"
+  },
+  "GameBoard": {
+    "ExistingGuessTips": "Cette combinaison a déjà été devinée, essayez-en une nouvelle !",
+    "H1": "Jeu Connections",
+    "Today": "Aujourd'hui",
+    "MistakesRemaining": "Erreurs restantes",
+    "Shuffle": "Mélanger",
+    "DeselectAll": "Tout désélectionner",
+    "Submit": "Soumettre",
+    "GameOver": "Partie terminée",
+    "InfiniteMode": "Activer le mode infini ?",
+    "Share": "Partager",
+    "Enable": "Activer"
+  },
+  "BlogList": {
+    "prevp": "Précédent",
+    "nextp": "Suivant"
+  },
+  "BlogPost": {
+    "notFound": {
+      "title": "Article de blog introuvable",
+      "description": "L'article de blog demandé n'a pas pu être trouvé."
+    },
+    "title": "NYT Connections Hint - {date}",
+    "wordExplanations": "Explications des mots",
+    "themeHints": "Indices thématiques",
+    "answersExplanation": "Explication des réponses",
+    "revealAnswers": "Cliquez pour révéler les réponses !"
+  },
+  "about": {
+    "title": "À propos de nous",
+    "about_game": "À propos du jeu",
+    "game_description": "NYT Connections est un jeu passionnant de catégorisation de mots où les joueurs doivent trouver des connexions entre 16 mots et les classer en 4 groupes de 4.",
+    "how_to_play": "Comment jouer",
+    "how_to_play_description": "Chaque jour apporte un nouveau puzzle. Sélectionnez 4 mots liés et soumettez pour vérifier votre réponse. Vous avez 4 chances de vous tromper. Gagnez en trouvant les 4 groupes !"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "data_collection": "Collecte de données",
+    "data_collection_description": "Nous ne collectons que les informations essentielles nécessaires pour fournir nos services, y compris la progression du jeu et les données d'utilisation de base.",
+    "data_usage": "Utilisation des données",
+    "data_usage_description": "Les données collectées sont utilisées uniquement pour améliorer l'expérience utilisateur et la fonctionnalité du jeu. Nous n'utilisons pas vos informations personnelles à d'autres fins.",
+    "cookies": "Utilisation des cookies",
+    "cookies_description": "Nous utilisons des cookies pour sauvegarder votre progression dans le jeu et vos préférences. Ceux-ci sont nécessaires au bon fonctionnement du site web."
+  },
+  "Footer": {
+    "links": "Liens",
+    "about": "À propos",
+    "privacy": "Confidentialité",
+    "blog": "Blog",
+    "legal": "Mentions légales",
+    "rights": "Tous droits réservés."
+  }
+}

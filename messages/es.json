@@ -1,0 +1,79 @@
+{
+  "lang": "español",
+  "home": {
+    "slogan": "El rompecabezas de hoy y respuestas recientes"
+  },
+  "Header": {
+    "headerTitle": "Connections hint",
+    "home": "Inicio",
+    "blog": "Blog",
+    "tags": "Etiquetas",
+    "games": "Juego",
+    "Menu": "Menú",
+    "about": "Acerca de",
+    "privacy": "Privacidad"
+  },
+  "common": {
+    "theme": "Tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "notfound": {
+    "description": "Pero no te preocupes, puedes encontrar muchas otras cosas en nuestra página de inicio.",
+    "title": "Lo sentimos, no pudimos encontrar esta página.",
+    "back": "Volver al inicio"
+  },
+  "GameBoard": {
+    "ExistingGuessTips": "¡Esta combinación ya ha sido adivinada, intenta una nueva!",
+    "H1": "Juego Connections",
+    "Today": "Hoy",
+    "MistakesRemaining": "Errores restantes",
+    "Shuffle": "Mezclar",
+    "DeselectAll": "Deseleccionar todo",
+    "Submit": "Enviar",
+    "GameOver": "Juego terminado",
+    "InfiniteMode": "¿Activar modo infinito?",
+    "Share": "Compartir",
+    "Enable": "Activar"
+  },
+  "BlogList": {
+    "prevp": "Anterior",
+    "nextp": "Siguiente"
+  },
+  "BlogPost": {
+    "notFound": {
+      "title": "Entrada de blog no encontrada",
+      "description": "No se pudo encontrar la entrada de blog solicitada."
+    },
+    "title": "NYT Connections Hint - {date}",
+    "wordExplanations": "Explicaciones de palabras",
+    "themeHints": "Pistas temáticas",
+    "answersExplanation": "Explicación de respuestas",
+    "revealAnswers": "¡Haz clic para revelar las respuestas!"
+  },
+  "about": {
+    "title": "Acerca de nosotros",
+    "about_game": "Sobre el juego",
+    "game_description": "NYT Connections es un emocionante juego de categorización de palabras donde los jugadores deben encontrar conexiones entre 16 palabras y ordenarlas en 4 grupos de 4.",
+    "how_to_play": "Cómo jugar",
+    "how_to_play_description": "Cada día hay un nuevo rompecabezas. Selecciona 4 palabras relacionadas y envía para verificar tu respuesta. Tienes 4 oportunidades para equivocarte. ¡Gana encontrando los 4 grupos!"
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "data_collection": "Recopilación de datos",
+    "data_collection_description": "Solo recopilamos la información esencial necesaria para proporcionar nuestros servicios, incluido el progreso del juego y datos básicos de uso.",
+    "data_usage": "Uso de datos",
+    "data_usage_description": "Los datos recopilados se utilizan únicamente para mejorar la experiencia del usuario y la funcionalidad del juego. No utilizamos su información personal para otros fines.",
+    "cookies": "Uso de cookies",
+    "cookies_description": "Utilizamos cookies para guardar tu progreso en el juego y preferencias. Estas son necesarias para el correcto funcionamiento del sitio web."
+  },
+  "Footer": {
+    "links": "Enlaces",
+    "about": "Acerca de",
+    "privacy": "Privacidad",
+    "blog": "Blog",
+    "legal": "Legal",
+    "rights": "Todos los derechos reservados."
+  }
+}

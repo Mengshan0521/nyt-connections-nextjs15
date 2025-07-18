@@ -1,0 +1,79 @@
+{
+  "lang": "Italiano",
+  "home": {
+    "slogan": "Il puzzle di oggi e le risposte recenti"
+  },
+  "Header": {
+    "headerTitle": "Connections hint",
+    "home": "Home",
+    "blog": "Blog",
+    "tags": "Tag",
+    "games": "Gioco",
+    "Menu": "Menu",
+    "about": "Chi siamo",
+    "privacy": "Privacy"
+  },
+  "common": {
+    "theme": "Tema",
+    "light": "Chiaro",
+    "dark": "Scuro",
+    "system": "Sistema"
+  },
+  "notfound": {
+    "description": "Ma non preoccuparti, puoi trovare molte altre cose sulla nostra homepage.",
+    "title": "Spiacenti, non abbiamo trovato questa pagina.",
+    "back": "Torna alla home"
+  },
+  "GameBoard": {
+    "ExistingGuessTips": "Questa combinazione è già stata indovinata, provane una nuova!",
+    "H1": "Gioco Connections",
+    "Today": "Oggi",
+    "MistakesRemaining": "Errori rimanenti",
+    "Shuffle": "Mescola",
+    "DeselectAll": "Deseleziona tutto",
+    "Submit": "Invia",
+    "GameOver": "Partita finita",
+    "InfiniteMode": "Attivare la modalità infinita?",
+    "Share": "Condividi",
+    "Enable": "Attiva"
+  },
+  "BlogList": {
+    "prevp": "Precedente",
+    "nextp": "Successivo"
+  },
+  "BlogPost": {
+    "notFound": {
+      "title": "Post del blog non trovato",
+      "description": "Il post del blog richiesto non è stato trovato."
+    },
+    "title": "NYT Connections Hint - {date}",
+    "wordExplanations": "Spiegazioni delle parole",
+    "themeHints": "Suggerimenti tematici",
+    "answersExplanation": "Spiegazione delle risposte",
+    "revealAnswers": "Clicca per rivelare le risposte!"
+  },
+  "about": {
+    "title": "Chi siamo",
+    "about_game": "Il gioco",
+    "game_description": "NYT Connections è un coinvolgente gioco di categorizzazione di parole dove i giocatori devono trovare connessioni tra 16 parole e ordinarle in 4 gruppi da 4.",
+    "how_to_play": "Come giocare",
+    "how_to_play_description": "Ogni giorno c'è un nuovo puzzle. Seleziona 4 parole correlate e invia per verificare la tua risposta. Hai 4 possibilità di errore. Vinci trovando tutti e 4 i gruppi!"
+  },
+  "privacy": {
+    "title": "Informativa sulla privacy",
+    "data_collection": "Raccolta dati",
+    "data_collection_description": "Raccogliamo solo le informazioni essenziali necessarie per fornire i nostri servizi, inclusi i progressi del gioco e i dati di utilizzo di base.",
+    "data_usage": "Utilizzo dei dati",
+    "data_usage_description": "I dati raccolti vengono utilizzati esclusivamente per migliorare l'esperienza utente e la funzionalità del gioco. Non utilizziamo le tue informazioni personali per altri scopi.",
+    "cookies": "Utilizzo dei cookie",
+    "cookies_description": "Utilizziamo i cookie per salvare i tuoi progressi nel gioco e le preferenze. Questi sono necessari per il corretto funzionamento del sito web."
+  },
+  "Footer": {
+    "links": "Collegamenti",
+    "about": "Chi siamo",
+    "privacy": "Privacy",
+    "blog": "Blog",
+    "legal": "Note legali",
+    "rights": "Tutti i diritti riservati."
+  }
+}

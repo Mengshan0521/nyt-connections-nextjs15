@@ -1,0 +1,79 @@
+{
+  "lang": "English",
+  "home": {
+    "slogan": "Today's Puzzle and Recent Answers"
+  },
+  "Header": {
+    "headerTitle": "Connections hint",
+    "home": "Home",
+    "blog": "Blog",
+    "tags": "Tags",
+    "games": "Game",
+    "Menu": "Menu",
+    "about": "About",
+    "privacy": "Privacy"
+  },
+  "common": {
+    "theme": "theme",
+    "light": "light",
+    "dark": "dark",
+    "system": "system"
+  },
+  "notfound": {
+    "description": "But dont worry, you can find plenty of other things on our homepage.",
+    "title": "Sorry we couldn't find this page.",
+    "back": "Back to homepage"
+  },
+  "GameBoard": {
+    "ExistingGuessTips": "This combination has been guessed, please try a new one!",
+    "H1": "Connections Game",
+    "Today": "Today",
+    "MistakesRemaining": "Mistakes remaining",
+    "Shuffle": "Shuffle",
+    "DeselectAll": "Deselect all",
+    "Submit": "Submit",
+    "GameOver": "Game Over",
+    "InfiniteMode": "Enable infinite mode?",
+    "Share": "Share",
+    "Enable": "Enable"
+  },
+  "BlogList": {
+    "prevp": "Previous",
+    "nextp": "Next"
+  },
+  "BlogPost": {
+    "notFound": {
+      "title": "Blog post not found",
+      "description": "The requested blog post could not be found."
+    },
+    "title": "NYT Connections Hint - {date}",
+    "wordExplanations": "Word Explanations",
+    "themeHints": "Theme Hints",
+    "answersExplanation": "Answers Explanation",
+    "revealAnswers": "Click to reveal answers!"
+  },
+  "about": {
+    "title": "About Us",
+    "about_game": "About the Game",
+    "game_description": "NYT Connections is an engaging word categorization game where players need to find connections between 16 words and sort them into 4 groups of 4.",
+    "how_to_play": "How to Play",
+    "how_to_play_description": "Each day brings a new puzzle. Select 4 related words and submit to verify your answer. You have 4 chances to make mistakes. Win by finding all 4 groups!"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "data_collection": "Data Collection",
+    "data_collection_description": "We only collect essential information needed to provide our services, including game progress and basic usage data.",
+    "data_usage": "Data Usage",
+    "data_usage_description": "Collected data is used solely to improve user experience and game functionality. We do not use your personal information for other purposes.",
+    "cookies": "Cookie Usage",
+    "cookies_description": "We use cookies to save your game progress and preferences. These are necessary for the proper functioning of the website."
+  },
+  "Footer": {
+    "links": "Links",
+    "about": "About",
+    "privacy": "Privacy",
+    "blog": "Blog",
+    "legal": "Legal",
+    "rights": "All rights reserved."
+  }
+}

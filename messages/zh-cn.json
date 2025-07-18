@@ -1,0 +1,79 @@
+{
+  "lang": "简体中文",
+  "home": {
+    "slogan": "今日谜题和最新答案"
+  },
+  "Header": {
+    "headerTitle": "Connections hint",
+    "home": "首页",
+    "blog": "博客",
+    "tags": "标签",
+    "Menu": "菜单",
+    "games": "游戏",
+    "about": "关于",
+    "privacy": "隐私政策"
+  },
+  "about": {
+    "title": "关于我们",
+    "about_game": "关于游戏",
+    "game_description": "NYT Connections 是一个有趣的词语分类游戏，玩家需要找出16个单词之间的联系，将它们分成4组，每组4个单词。",
+    "how_to_play": "游戏规则",
+    "how_to_play_description": "每天都会有新的谜题。选择4个相关的单词，点击提交来验证你的答案。你有4次犯错的机会。找出所有4组单词即可获胜！"
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "data_collection": "数据收集",
+    "data_collection_description": "我们只收集必要的信息来提供服务，包括游戏进度和基本使用数据。",
+    "data_usage": "数据使用",
+    "data_usage_description": "收集的数据仅用于改进用户体验和游戏功能。我们不会将您的个人信息用于其他目的。",
+    "cookies": "Cookie 使用",
+    "cookies_description": "我们使用 cookies 来保存您的游戏进度和偏好设置。这些都是确保网站正常运行所必需的。"
+  },
+  "common": {
+    "theme": "主题",
+    "light": "浅色",
+    "dark": "深色",
+    "system": "跟随系统"
+  },
+  "notfound": {
+    "description": "别担心，你可以在我们的主页上找到很多其他内容。",
+    "title": "抱歉，我们找不到这个页面。",
+    "back": "返回主页"
+  },
+  "GameBoard": {
+    "ExistingGuessTips": "这个组合已经猜过了，请尝试一个新的！",
+    "H1": "Connections 游戏",
+    "Today": "今天",
+    "MistakesRemaining": "剩余错误次数",
+    "Shuffle": "洗牌",
+    "DeselectAll": "取消全选",
+    "Submit": "提交",
+    "GameOver":"游戏结束",
+    "InfiniteMode":"是否开启无限模式？",
+    "Share":"分享",
+    "Enable":"开启"
+  },
+  "BlogList": {
+    "prevp": "上一页",
+    "nextp": "下一页"
+  },
+  "BlogPost": {
+    "notFound": {
+      "title": "博客文章未找到",
+      "description": "请求的博客文章无法找到。"
+    },
+    "title": "NYT Connections 提示 - {date}",
+    "wordExplanations": "单词解释",
+    "themeHints": "主题提示",
+    "answersExplanation": "答案解释",
+    "revealAnswers": "点击显示答案！"
+  },
+  "Footer": {
+    "links": "链接",
+    "about": "关于",
+    "privacy": "隐私政策",
+    "blog": "博客",
+    "legal": "法律信息",
+    "rights": "保留所有权利。"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "lang": "Deutsch",
+  "home": {
+    "slogan": "Das heutige Puzzle und aktuelle Antworten"
+  },
+  "Header": {
+    "headerTitle": "Connections hint",
+    "home": "Startseite",
+    "blog": "Blog",
+    "tags": "Tags",
+    "games": "Spiel",
+    "Menu": "Menü",
+    "about": "Über uns",
+    "privacy": "Datenschutz"
+  },
+  "common": {
+    "theme": "Thema",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "notfound": {
+    "description": "Aber keine Sorge, Sie finden viele andere Dinge auf unserer Homepage.",
+    "title": "Entschuldigung, wir konnten diese Seite nicht finden.",
+    "back": "Zurück zur Startseite"
+  },
+  "GameBoard": {
+    "ExistingGuessTips": "Diese Kombination wurde bereits geraten, bitte versuchen Sie eine neue!",
+    "H1": "Connections Spiel",
+    "Today": "Heute",
+    "MistakesRemaining": "Verbleibende Fehler",
+    "Shuffle": "Mischen",
+    "DeselectAll": "Alle abwählen",
+    "Submit": "Absenden",
+    "GameOver": "Spiel vorbei",
+    "InfiniteMode": "Endlosmodus aktivieren?",
+    "Share": "Teilen",
+    "Enable": "Aktivieren"
+  },
+  "BlogList": {
+    "prevp": "Vorherige",
+    "nextp": "Nächste"
+  },
+  "BlogPost": {
+    "notFound": {
+      "title": "Blogbeitrag nicht gefunden",
+      "description": "Der angeforderte Blogbeitrag konnte nicht gefunden werden."
+    },
+    "title": "NYT Connections Hint - {date}",
+    "wordExplanations": "Worterklärungen",
+    "themeHints": "Thema-Hinweise",
+    "answersExplanation": "Antworten Erklärung",
+    "revealAnswers": "Klicken Sie hier, um die Antworten anzuzeigen!"
+  },
+  "about": {
+    "title": "Über uns",
+    "about_game": "Über das Spiel",
+    "game_description": "NYT Connections ist ein spannendes Wortkategorisierungsspiel, bei dem Spieler Verbindungen zwischen 16 Wörtern finden und sie in 4 Gruppen zu je 4 einordnen müssen.",
+    "how_to_play": "Spielanleitung",
+    "how_to_play_description": "Jeden Tag gibt es ein neues Rätsel. Wählen Sie 4 zusammengehörige Wörter aus und bestätigen Sie Ihre Antwort. Sie haben 4 Fehlerversuche. Gewinnen Sie, indem Sie alle 4 Gruppen finden!"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "data_collection": "Datenerfassung",
+    "data_collection_description": "Wir erfassen nur die notwendigen Informationen, die für die Bereitstellung unserer Dienste erforderlich sind, einschließlich Spielfortschritt und grundlegender Nutzungsdaten.",
+    "data_usage": "Datennutzung",
+    "data_usage_description": "Die gesammelten Daten werden ausschließlich zur Verbesserung der Benutzererfahrung und Spielfunktionalität verwendet. Wir verwenden Ihre persönlichen Daten nicht für andere Zwecke.",
+    "cookies": "Cookie-Nutzung",
+    "cookies_description": "Wir verwenden Cookies, um Ihren Spielfortschritt und Ihre Einstellungen zu speichern. Diese sind für das ordnungsgemäße Funktionieren der Website erforderlich."
+  },
+  "Footer": {
+    "links": "Links",
+    "about": "Über uns",
+    "privacy": "Datenschutz",
+    "blog": "Blog",
+    "legal": "Rechtliches",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

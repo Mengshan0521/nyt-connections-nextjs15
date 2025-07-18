@@ -1,0 +1,79 @@
+{
+  "lang": "Português",
+  "home": {
+    "slogan": "O puzzle de hoje e respostas recentes"
+  },
+  "Header": {
+    "headerTitle": "Connections hint",
+    "home": "Início",
+    "blog": "Blog",
+    "tags": "Tags",
+    "games": "Jogo",
+    "Menu": "Menu",
+    "about": "Sobre",
+    "privacy": "Privacidade"
+  },
+  "common": {
+    "theme": "Tema",
+    "light": "Claro",
+    "dark": "Escuro",
+    "system": "Sistema"
+  },
+  "notfound": {
+    "description": "Mas não se preocupe, você pode encontrar muitas outras coisas em nossa página inicial.",
+    "title": "Desculpe, não conseguimos encontrar esta página.",
+    "back": "Voltar ao início"
+  },
+  "GameBoard": {
+    "ExistingGuessTips": "Esta combinação já foi adivinhada, tente uma nova!",
+    "H1": "Jogo Connections",
+    "Today": "Hoje",
+    "MistakesRemaining": "Erros restantes",
+    "Shuffle": "Embaralhar",
+    "DeselectAll": "Desmarcar tudo",
+    "Submit": "Enviar",
+    "GameOver": "Fim de jogo",
+    "InfiniteMode": "Ativar modo infinito?",
+    "Share": "Compartilhar",
+    "Enable": "Ativar"
+  },
+  "BlogList": {
+    "prevp": "Anterior",
+    "nextp": "Próximo"
+  },
+  "BlogPost": {
+    "notFound": {
+      "title": "Post do blog não encontrado",
+      "description": "O post do blog solicitado não foi encontrado."
+    },
+    "title": "NYT Connections Hint - {date}",
+    "wordExplanations": "Explicações das palavras",
+    "themeHints": "Dicas temáticas",
+    "answersExplanation": "Explicação das respostas",
+    "revealAnswers": "Clique para revelar as respostas!"
+  },
+  "about": {
+    "title": "Sobre nós",
+    "about_game": "Sobre o jogo",
+    "game_description": "NYT Connections é um envolvente jogo de categorização de palavras onde os jogadores precisam encontrar conexões entre 16 palavras e organizá-las em 4 grupos de 4.",
+    "how_to_play": "Como jogar",
+    "how_to_play_description": "Cada dia traz um novo puzzle. Selecione 4 palavras relacionadas e envie para verificar sua resposta. Você tem 4 chances de errar. Ganhe encontrando todos os 4 grupos!"
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "data_collection": "Coleta de dados",
+    "data_collection_description": "Coletamos apenas as informações essenciais necessárias para fornecer nossos serviços, incluindo progresso do jogo e dados básicos de uso.",
+    "data_usage": "Uso dos dados",
+    "data_usage_description": "Os dados coletados são usados exclusivamente para melhorar a experiência do usuário e a funcionalidade do jogo. Não usamos suas informações pessoais para outros fins.",
+    "cookies": "Uso de cookies",
+    "cookies_description": "Usamos cookies para salvar seu progresso no jogo e preferências. Estes são necessários para o funcionamento adequado do site."
+  },
+  "Footer": {
+    "links": "Links",
+    "about": "Sobre",
+    "privacy": "Privacidade",
+    "blog": "Blog",
+    "legal": "Legal",
+    "rights": "Todos os direitos reservados."
+  }
+}

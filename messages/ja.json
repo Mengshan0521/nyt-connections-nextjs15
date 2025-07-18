@@ -1,0 +1,79 @@
+{
+  "lang": "日本語",
+  "home": {
+    "slogan": "今日のパズルと最近の回答"
+  },
+  "Header": {
+    "headerTitle": "Connections hint",
+    "home": "ホーム",
+    "blog": "ブログ",
+    "tags": "タグ",
+    "games": "ゲーム",
+    "Menu": "メニュー",
+    "about": "概要",
+    "privacy": "プライバシー"
+  },
+  "common": {
+    "theme": "テーマ",
+    "light": "ライト",
+    "dark": "ダーク",
+    "system": "システム"
+  },
+  "notfound": {
+    "description": "ご心配なく、ホームページで他のコンテンツをお探しいただけます。",
+    "title": "申し訳ありません。このページは見つかりませんでした。",
+    "back": "ホームに戻る"
+  },
+  "GameBoard": {
+    "ExistingGuessTips": "この組み合わせは既に試されています。新しい組み合わせをお試しください！",
+    "H1": "Connectionsゲーム",
+    "Today": "今日",
+    "MistakesRemaining": "残りの間違い回数",
+    "Shuffle": "シャッフル",
+    "DeselectAll": "すべて選択解除",
+    "Submit": "送信",
+    "GameOver": "ゲーム終了",
+    "InfiniteMode": "無限モードを有効にしますか？",
+    "Share": "共有",
+    "Enable": "有効にする"
+  },
+  "BlogList": {
+    "prevp": "前へ",
+    "nextp": "次へ"
+  },
+  "BlogPost": {
+    "notFound": {
+      "title": "ブログ記事が見つかりません",
+      "description": "リクエストされたブログ記事が見つかりませんでした。"
+    },
+    "title": "NYT Connections Hint - {date}",
+    "wordExplanations": "単語の説明",
+    "themeHints": "テーマのヒント",
+    "answersExplanation": "回答の説明",
+    "revealAnswers": "クリックして回答を表示！"
+  },
+  "about": {
+    "title": "概要",
+    "about_game": "ゲームについて",
+    "game_description": "NYT Connectionsは、16個の単語の間のつながりを見つけ、4つのグループに分類する魅力的な単語カテゴリー化ゲームです。",
+    "how_to_play": "遊び方",
+    "how_to_play_description": "毎日新しいパズルが登場します。関連する4つの単語を選択して送信し、答えを確認します。間違えられるのは4回までです。4つのグループすべてを見つけて勝利しましょう！"
+  },
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "data_collection": "データ収集",
+    "data_collection_description": "ゲームの進行状況や基本的な使用データなど、サービス提供に必要不可欠な情報のみを収集しています。",
+    "data_usage": "データの使用",
+    "data_usage_description": "収集したデータは、ユーザー体験とゲーム機能の改善にのみ使用されます。個人情報を他の目的で使用することはありません。",
+    "cookies": "Cookieの使用",
+    "cookies_description": "ゲームの進行状況と設定を保存するためにCookieを使用しています。これらはウェブサイトの適切な機能のために必要です。"
+  },
+  "Footer": {
+    "links": "リンク",
+    "about": "概要",
+    "privacy": "プライバシー",
+    "blog": "ブログ",
+    "legal": "法的情報",
+    "rights": "All rights reserved."
+  }
+}
