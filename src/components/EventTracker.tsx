@@ -58,15 +58,4 @@ export default function EventTracker({
       {label}
     </button>
   );
-}
-
-// 为全局window对象添加gtag函数类型
-declare global {
-  interface Window {
-    gtag: (
-      command: string,
-      eventName: string,
-      params?: Record<string, unknown>
-    ) => void;
-  }
 } 

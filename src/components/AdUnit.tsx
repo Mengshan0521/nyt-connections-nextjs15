@@ -119,11 +119,4 @@ export default function AdUnit({
       {/* 广告将动态加载到这里 */}
     </div>
   );
-}
-
-// 为全局window对象添加adsbygoogle类型
-declare global {
-  interface Window {
-    adsbygoogle: Array<Record<string, unknown>>;
-  }
 } 

@@ -1,10 +1,5 @@
-'use client';
-
-import { useState, useEffect } from 'react';
-import GoogleAnalytics from './GoogleAnalytics';
-import AdSense from './AdSense';
-import CookieConsent from './CookieConsent';
-import { hasConsented } from '@/utils/cookieConsent';
+import ConsentBanner from '@/features/consent/components/ConsentBanner';
+import AnalyticsProvider from '@/features/analytics/components/AnalyticsProvider';
 
 interface ServiceProviderProps {
   gaId?: string;
@@ -14,49 +9,19 @@ interface ServiceProviderProps {
 /**
  * 服务提供者组件
  * 管理所有第三方服务的加载
+ * 使用服务端组件来尽可能多地在服务端渲染
  */
 export default function ServiceProvider({
   gaId,
   adsenseId
 }: ServiceProviderProps) {
-  const [analyticsConsent, setAnalyticsConsent] = useState(false);
-  const [advertisingConsent, setAdvertisingConsent] = useState(false);
-  
-  // 处理同意状态变化
-  const handleConsentChange = () => {
-    setAnalyticsConsent(hasConsented('analytics'));
-    setAdvertisingConsent(hasConsented('advertising'));
-  };
-  
-  useEffect(() => {
-    // 初始化时检查同意状态
-    handleConsentChange();
-    
-    // 监听同意状态变化
-    window.addEventListener('consentStatusChanged', handleConsentChange);
-    
-    // 清理
-    return () => {
-      window.removeEventListener('consentStatusChanged', handleConsentChange);
-    };
-  }, []);
-  
   return (
     <>
-      {/* Cookie同意对话框 */}
-      <CookieConsent />
+      {/* Cookie 同意横幅 */}
+      <ConsentBanner />
       
-      {/* Google Analytics */}
-      <GoogleAnalytics
-        gaId={gaId}
-        consentGiven={analyticsConsent}
-      />
-      
-      {/* Google AdSense */}
-      <AdSense
-        publisherId={adsenseId}
-        consentGiven={advertisingConsent}
-      />
+      {/* 分析和广告脚本 */}
+      <AnalyticsProvider gaId={gaId} adsenseId={adsenseId} />
     </>
   );
 } 
