@@ -22,7 +22,8 @@
   "notfound": {
     "description": "걱정하지 마세요, 홈페이지에서 다른 많은 콘텐츠를 찾으실 수 있습니다.",
     "title": "죄송합니다. 이 페이지를 찾을 수 없습니다.",
-    "back": "홈으로 돌아가기"
+    "goBack": "뒤로 가기",
+    "backHome": "홈으로 돌아가기"
   },
   "GameBoard": {
     "ExistingGuessTips": "이 조합은 이미 시도되었습니다. 새로운 조합을 시도해 주세요!",
@@ -35,11 +36,22 @@
     "GameOver": "게임 종료",
     "InfiniteMode": "무한 모드를 활성화하시겠습니까?",
     "Share": "공유",
-    "Enable": "활성화"
+    "Enable": "활성화",
+    "Deselect": "선택 해제",
+    "Loading": "게임 로딩 중...",
+    "PreparingGame": "퍼즐을 준비하고 있습니다...",
+    "Congratulations": "축하합니다!",
+    "YouFoundAllCategories": "모든 카테고리를 찾았습니다!",
+    "BetterLuckNextTime": "다음번에 더 좋은 결과를!",
+    "CategoriesFound": "찾은 카테고리",
+    "MistakesMade": "실수 횟수",
+    "PlayAgain": "다시 플레이"
   },
   "BlogList": {
     "prevp": "이전",
-    "nextp": "다음"
+    "nextp": "다음",
+    "title": "블로그",
+    "description": "NYT Connections 퍼즐의 힌트와 답안"
   },
   "BlogPost": {
     "notFound": {
@@ -69,11 +81,9 @@
     "cookies_description": "게임 진행 상황과 설정을 저장하기 위해 쿠키를 사용합니다. 이는 웹사이트의 올바른 기능을 위해 필요합니다."
   },
   "Footer": {
-    "links": "링크",
+    "blog": "블로그",
     "about": "소개",
     "privacy": "개인정보",
-    "blog": "블로그",
-    "legal": "법적 고지",
-    "rights": "모든 권리 보유."
+    "rights": "© 2025 NYT Connections 게임. 모든 권리 보유."
   }
 }

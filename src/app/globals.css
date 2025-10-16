@@ -3,24 +3,58 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --hover-bg: #f3f4f6;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-heading-400: #60a5fa;  /* blue-400 */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* 暗色模式变量 */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --card-bg: #1f2937;
+  --card-border: #374151;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --hover-bg: #374151;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tailwind 基础层样式 */
+@layer base {
+  body {
+    @apply bg-white dark:bg-gray-950 text-black dark:text-white;
+  }
+}
+
+/* 平滑过渡 */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Shake animation for incorrect guesses */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
 }

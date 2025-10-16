@@ -48,3 +48,6 @@ next-env.d.ts
 # local env files
 .env*.local
 .env
+.claude/settings.local.json
+CLAUDE.md
+supabase/migrations/20240101_initial_schema.sql

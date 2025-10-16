@@ -7,11 +7,17 @@
     "headerTitle": "Connections hint",
     "home": "Home",
     "blog": "Blog",
+    "games": "Games",
     "tags": "Tags",
-    "games": "Game",
-    "Menu": "Menu",
     "about": "About",
-    "privacy": "Privacy"
+    "privacy": "Privacy",
+    "Menu": "Menu"
+  },
+  "Footer": {
+    "blog": "Blog",
+    "about": "About",
+    "privacy": "Privacy",
+    "rights": "© 2025 NYT Connections Game. All rights reserved."
   },
   "common": {
     "theme": "theme",
@@ -22,24 +28,40 @@
   "notfound": {
     "description": "But dont worry, you can find plenty of other things on our homepage.",
     "title": "Sorry we couldn't find this page.",
-    "back": "Back to homepage"
+    "goBack": "Go Back",
+    "backHome": "Back to Homepage"
   },
   "GameBoard": {
+    "ConnectionsHints": "Connections Hints",
+    "TodaysPuzzle": "Today's Puzzle and Recent Answers",
+    "ConnectionsGameToday": "Connections Game Today",
+    "GameHintsAnswers": "Game Hints & Answers",
     "ExistingGuessTips": "This combination has been guessed, please try a new one!",
     "H1": "Connections Game",
     "Today": "Today",
     "MistakesRemaining": "Mistakes remaining",
     "Shuffle": "Shuffle",
+    "Deselect": "Deselect",
     "DeselectAll": "Deselect all",
     "Submit": "Submit",
     "GameOver": "Game Over",
-    "InfiniteMode": "Enable infinite mode?",
+    "InfiniteMode": "Infinite Mode",
     "Share": "Share",
-    "Enable": "Enable"
+    "Enable": "Enable",
+    "Loading": "Loading Game...",
+    "PreparingGame": "Preparing your puzzle...",
+    "Congratulations": "Congratulations!",
+    "YouFoundAllCategories": "You found all the categories!",
+    "BetterLuckNextTime": "Better luck next time!",
+    "CategoriesFound": "Categories found",
+    "MistakesMade": "Mistakes made",
+    "PlayAgain": "Play Again"
   },
   "BlogList": {
     "prevp": "Previous",
-    "nextp": "Next"
+    "nextp": "Next",
+    "title": "Blog",
+    "description": "Hints and answers for NYT Connections puzzles"
   },
   "BlogPost": {
     "notFound": {

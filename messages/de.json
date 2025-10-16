@@ -22,7 +22,8 @@
   "notfound": {
     "description": "Aber keine Sorge, Sie finden viele andere Dinge auf unserer Homepage.",
     "title": "Entschuldigung, wir konnten diese Seite nicht finden.",
-    "back": "Zurück zur Startseite"
+    "goBack": "Zurück",
+    "backHome": "Zur Startseite"
   },
   "GameBoard": {
     "ExistingGuessTips": "Diese Kombination wurde bereits geraten, bitte versuchen Sie eine neue!",
@@ -35,11 +36,22 @@
     "GameOver": "Spiel vorbei",
     "InfiniteMode": "Endlosmodus aktivieren?",
     "Share": "Teilen",
-    "Enable": "Aktivieren"
+    "Enable": "Aktivieren",
+    "Deselect": "Abwählen",
+    "Loading": "Spiel wird geladen...",
+    "PreparingGame": "Ihr Rätsel wird vorbereitet...",
+    "Congratulations": "Herzlichen Glückwunsch!",
+    "YouFoundAllCategories": "Sie haben alle Kategorien gefunden!",
+    "BetterLuckNextTime": "Mehr Glück beim nächsten Mal!",
+    "CategoriesFound": "Gefundene Kategorien",
+    "MistakesMade": "Gemachte Fehler",
+    "PlayAgain": "Nochmal spielen"
   },
   "BlogList": {
     "prevp": "Vorherige",
-    "nextp": "Nächste"
+    "nextp": "Nächste",
+    "title": "Blog",
+    "description": "Hinweise und Antworten für NYT Connections Puzzles"
   },
   "BlogPost": {
     "notFound": {
@@ -69,11 +81,9 @@
     "cookies_description": "Wir verwenden Cookies, um Ihren Spielfortschritt und Ihre Einstellungen zu speichern. Diese sind für das ordnungsgemäße Funktionieren der Website erforderlich."
   },
   "Footer": {
-    "links": "Links",
+    "blog": "Blog",
     "about": "Über uns",
     "privacy": "Datenschutz",
-    "blog": "Blog",
-    "legal": "Rechtliches",
-    "rights": "Alle Rechte vorbehalten."
+    "rights": "© 2025 NYT Connections Spiel. Alle Rechte vorbehalten."
   }
 }

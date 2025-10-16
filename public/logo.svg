@@ -1,0 +1,9 @@
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <rect stroke-opacity="0" rx="1" id="svg_1" height="10" width="40" y="0" x="0" stroke="#0f0f00" fill="#f9df6d"/>
+  <rect stroke-opacity="0" rx="1" id="svg_2" height="10" width="40" y="10" x="0" stroke="#0f0f00" fill="#a0c35a"/>
+  <rect stroke-opacity="0" rx="1" id="svg_3" height="10" width="40" y="20" x="0" stroke="#0f0f00" fill="#b0c4ef"/>
+  <rect stroke-opacity="0" rx="1" id="svg_4" height="10" width="40" y="30" x="0" stroke="#0f0f00" fill="#ba81c5"/>
+ </g>
+</svg>

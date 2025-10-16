@@ -22,7 +22,8 @@
   "notfound": {
     "description": "ご心配なく、ホームページで他のコンテンツをお探しいただけます。",
     "title": "申し訳ありません。このページは見つかりませんでした。",
-    "back": "ホームに戻る"
+    "goBack": "戻る",
+    "backHome": "ホームに戻る"
   },
   "GameBoard": {
     "ExistingGuessTips": "この組み合わせは既に試されています。新しい組み合わせをお試しください！",
@@ -35,11 +36,22 @@
     "GameOver": "ゲーム終了",
     "InfiniteMode": "無限モードを有効にしますか？",
     "Share": "共有",
-    "Enable": "有効にする"
+    "Enable": "有効にする",
+    "Deselect": "選択解除",
+    "Loading": "ゲームを読み込み中...",
+    "PreparingGame": "パズルを準備しています...",
+    "Congratulations": "おめでとうございます！",
+    "YouFoundAllCategories": "すべてのカテゴリーを見つけました！",
+    "BetterLuckNextTime": "また挑戦してください！",
+    "CategoriesFound": "見つけたカテゴリー",
+    "MistakesMade": "間違えた回数",
+    "PlayAgain": "もう一度遊ぶ"
   },
   "BlogList": {
     "prevp": "前へ",
-    "nextp": "次へ"
+    "nextp": "次へ",
+    "title": "ブログ",
+    "description": "NYT Connections パズルのヒントと回答"
   },
   "BlogPost": {
     "notFound": {
@@ -69,11 +81,9 @@
     "cookies_description": "ゲームの進行状況と設定を保存するためにCookieを使用しています。これらはウェブサイトの適切な機能のために必要です。"
   },
   "Footer": {
-    "links": "リンク",
+    "blog": "ブログ",
     "about": "概要",
     "privacy": "プライバシー",
-    "blog": "ブログ",
-    "legal": "法的情報",
-    "rights": "All rights reserved."
+    "rights": "© 2025 NYT Connectionsゲーム。全著作権所有。"
   }
 }
