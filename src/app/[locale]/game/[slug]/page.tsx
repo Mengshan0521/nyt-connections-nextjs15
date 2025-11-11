@@ -1,9 +1,11 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { format, parse, isValid } from 'date-fns';
+import { Suspense } from 'react';
 import GameBoard from '@/components/GameBoard';
+import GameSkeleton from '@/components/skeletons/GameSkeleton';
 import { generateMetadata as genMeta } from '@/config/seo';
-import { getGameData } from '@/lib/gameDataService';
+import { getGameData } from '@/lib/services/gameDataService';
 import { getTranslations } from 'next-intl/server';
 
 interface GameParams {
@@ -66,8 +68,9 @@ export async function generateMetadata({
   return genMeta(
     `NYT Connections - ${formattedDate}`,
     `Play the NYT Connections word puzzle game from ${formattedDate}. Find groups of four words that share something in common.`,
+    `/game/${slug}`,
     locale,
-    `/game/${slug}`
+    date
   );
 }
 
@@ -105,7 +108,9 @@ export default async function GameArchivePage({
         Connections - {formattedDate}
       </h1>
 
-      <GameBoard gameData={gameDataResponse.gameData} />
+      <Suspense fallback={<GameSkeleton />}>
+        <GameBoard gameData={gameDataResponse.gameData} />
+      </Suspense>
     </div>
   );
 }

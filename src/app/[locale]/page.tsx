@@ -1,8 +1,11 @@
 import { Metadata } from 'next';
+import { Suspense } from 'react';
 import GameBoard from '@/components/GameBoard';
 import BlogPostsList from '@/components/BlogPostsList';
+import GameSkeleton from '@/components/skeletons/GameSkeleton';
+import PostsSkeleton from '@/components/skeletons/PostsSkeleton';
 import { generateMetadata as genMeta } from '@/config/seo';
-import { getGameData } from '@/lib/gameDataService';
+import { getGameData } from '@/lib/services/gameDataService';
 import { getPosts } from '@/lib/postService';
 import { getTranslations } from 'next-intl/server';
 
@@ -45,28 +48,32 @@ export default async function HomePage({
 
 
 
-      {/* 游戏板 */}
-      {gameDataResponse ? (
-        <GameBoard gameData={gameDataResponse.gameData} />
-      ) : (
-        <div className="max-w-4xl mx-auto p-4">
-          <div className="text-center">
-            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">
-              Loading Game...
-            </h2>
-            <p className="text-gray-600 dark:text-gray-400">
-              Game data is not available at the moment.
-            </p>
+      {/* 游戏板 - 使用 Suspense 实现流式渲染 */}
+      <Suspense fallback={<GameSkeleton />}>
+        {gameDataResponse ? (
+          <GameBoard gameData={gameDataResponse.gameData} />
+        ) : (
+          <div className="max-w-4xl mx-auto p-4">
+            <div className="text-center">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+                Loading Game...
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400">
+                Game data is not available at the moment.
+              </p>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </Suspense>
 
-      {/* 博客文章列表 */}
+      {/* 博客文章列表 - 使用 Suspense 实现流式渲染 */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
         <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
           Game Hints & Answers
         </h2>
-        <BlogPostsList posts={posts} locale={locale} />
+        <Suspense fallback={<PostsSkeleton />}>
+          <BlogPostsList posts={posts} locale={locale} />
+        </Suspense>
       </div>
     </>
   );

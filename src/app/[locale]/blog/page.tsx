@@ -1,7 +1,9 @@
 import { Metadata } from 'next'
+import { Suspense } from 'react'
 import { getTranslations } from 'next-intl/server'
 import { getPosts } from '@/lib/postService'
 import BlogServer from '@/components/BlogServer'
+import PostsSkeleton from '@/components/skeletons/PostsSkeleton'
 import { LanguageToggle } from '@/components/language-toggle'
 import { ThemeToggle } from '@/components/theme-toggle'
 import Link from 'next/link'
@@ -30,7 +32,9 @@ export default async function BlogPage({
           <h1 className="text-3xl font-bold mb-8 text-center" style={{ color: 'var(--text-primary)' }}>
             {t('title') || 'Blog'}
           </h1>
-          <BlogServer locale={locale} />
+          <Suspense fallback={<PostsSkeleton />}>
+            <BlogServer locale={locale} />
+          </Suspense>
         </div>
       </main>
     </div>

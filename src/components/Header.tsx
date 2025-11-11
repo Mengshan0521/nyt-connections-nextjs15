@@ -24,6 +24,7 @@ export default function Header({ title, showBackToHome = false }: HeaderProps) {
           <Link
             href="/"
             aria-label={t(`headerTitle`)}
+            prefetch={true}
           >
             <div className="flex items-center justify-between">
               <div className="mr-3">
@@ -48,6 +49,7 @@ export default function Header({ title, showBackToHome = false }: HeaderProps) {
                     <Link
                       key={link.href}
                       href={link.href}
+                      prefetch={true}
                       className={`text-sm font-medium transition-colors ${
                         isActive
                           ? 'text-blue-600 dark:text-blue-400'

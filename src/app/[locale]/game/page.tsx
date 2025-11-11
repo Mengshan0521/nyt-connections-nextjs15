@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import GameBoard from '@/components/GameBoard';
 import { generateMetadata as genMeta } from '@/config/seo';
-import { getGameData } from '@/lib/gameDataService';
+import { getGameData } from '@/lib/services/gameDataService';
 import { notFound } from 'next/navigation';
 
 export async function generateMetadata({

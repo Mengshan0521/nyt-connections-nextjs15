@@ -24,6 +24,7 @@ const BlogPostsList: React.FC<BlogPostsListProps> = ({ posts, locale }) => {
                 parse(post.post_date, 'yyyy-MM-dd', new Date()),
                 'MMMM-dd-yyyy'
               )}`}
+              prefetch={true}
               className="text-gray-900 dark:text-gray-100 hover:text-blue-600 transition-colors"
               aria-labelledby={`NYT Connections Hint ${formatDateWithIntl(
                 parse(post.post_date, 'yyyy-MM-dd', new Date()),

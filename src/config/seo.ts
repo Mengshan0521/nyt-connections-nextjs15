@@ -1,118 +1,109 @@
 /**
  * SEO 配置
- * 集中管理网站的 SEO 相关配置
+ * 简化版 - 保留核心功能，删除冗余代码
  */
+
 export const siteConfig = {
   name: 'NYT Connections',
   description: 'A Next.js 15 application inspired by the NYT Connections game',
   url: process.env.NEXT_PUBLIC_BASE_URL || 'https://example.com',
   ogImage: '/og-image.png',
-  links: {
-    twitter: 'https://twitter.com/nytimes',
-    github: 'https://github.com/vercel/next.js',
-  },
-  // Performance optimization settings
-  performance: {
-    prefetch: true,
-    preconnect: true,
-    dnsPrefetch: true,
-    lazyLoading: true,
-    imageOptimization: true,
-    bundleAnalysis: true
-  },
-  // SEO optimization settings
-  seo: {
-    structuredData: true,
-    sitemap: true,
-    robots: true,
-    schemaOrg: true,
-    jsonLd: true,
-    metaTags: true
-  }
 };
+
+// 支持的语言列表
+const SUPPORTED_LANGUAGES = ['en', 'de', 'es', 'fr', 'it', 'ja', 'ko', 'pt', 'zh-cn'];
 
 /**
  * 生成动态的元数据
+ * 简化版本 - 支持有参数和无参数调用（兼容layout和页面）
  */
-export function generateMetadata(
-  title?: string,
-  description?: string,
-  path?: string,
-  locale?: string,
-  additionalData?: {
-    date?: string
-    category?: string
-    author?: string
-    image?: string
-  }
-) {
-  const metaTitle = title 
-    ? `${title} | ${siteConfig.name}`
-    : siteConfig.name;
-  
-  const metaDescription = description || siteConfig.description;
-  
-  const url = path 
-    ? `${siteConfig.url}/${path}`
-    : siteConfig.url;
-  
-  const ogImageUrl = additionalData?.image 
-    ? `${siteConfig.url}${additionalData.image}`
-    : `${siteConfig.url}${siteConfig.ogImage}`;
-  
-  const metadata = {
-    title: metaTitle,
-    description: metaDescription,
-    keywords: getKeywords(additionalData?.category),
-    authors: [{ name: additionalData?.author || siteConfig.name }],
+export function generateMetadata({
+  title,
+  description,
+  path,
+  locale,
+  date,
+  category,
+  image
+}: {
+  title?: string
+  description?: string
+  path?: string
+  locale?: string
+  date?: string
+  category?: string
+  image?: string
+} = {}) {  // 支持无参数调用
+  const baseTitle = 'NYT Connections';
+  const baseDescription = 'Daily word categorization puzzle game';
+  const url = process.env.NEXT_PUBLIC_BASE_URL || 'https://example.com';
+
+  // 简化逻辑
+  const finalTitle = title || baseTitle;
+  const finalDescription = description || baseDescription;
+
+  return {
+    metadataBase: new URL(url),
+    title: title ? `${title} | ${baseTitle}` : baseTitle,
+    description: finalDescription,
+    keywords: getKeywords(category),
     openGraph: {
-      title: metaTitle,
-      description: metaDescription,
-      url,
-      siteName: siteConfig.name,
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: metaTitle,
-        },
-      ],
+      title: finalTitle,
+      description: finalDescription,
+      url: `${url}${path || ''}`,
+      images: [image || '/og-image.png'],
       locale: locale || 'en_US',
       type: 'website',
-      publishedTime: additionalData?.date,
-      section: additionalData?.category,
+      publishedTime: date
     },
     twitter: {
       card: 'summary_large_image',
-      title: metaTitle,
-      description: metaDescription,
-      images: [ogImageUrl],
+      title: finalTitle,
+      description: finalDescription,
+      images: [image || '/og-image.png'],
       creator: '@nytimes',
     },
     alternates: {
-      canonical: url,
+      canonical: `${url}${path || ''}`,
+      languages: generateLanguageAlternates(path, locale)
     },
     other: {
       'twitter:site': '@nytimes',
       'twitter:creator': '@nytimes',
-      'article:author': additionalData?.author || siteConfig.name,
+      'structured-data': JSON.stringify(generateStructuredData(
+        finalTitle,
+        finalDescription,
+        `${url}${path || ''}`,
+        image || '/og-image.png',
+        { date, category }
+      ))
     }
   };
-
-  // Add structured data if enabled
-  if (siteConfig.seo.structuredData) {
-    metadata.other = {
-      ...metadata.other,
-      'structured-data': JSON.stringify(generateStructuredData(metaTitle, metaDescription, url, ogImageUrl, additionalData))
-    }
-  }
-
-  return metadata;
 }
 
 /**
- * 生成结构化数据
+ * 生成多语言 alternates
+ * 新增功能 - 支持10种语言版本的SEO
+ */
+function generateLanguageAlternates(
+  path?: string,
+  currentLocale?: string
+): Record<string, string> {
+  const url = process.env.NEXT_PUBLIC_BASE_URL || 'https://example.com';
+  const alternates: Record<string, string> = {};
+
+  SUPPORTED_LANGUAGES.forEach(lang => {
+    // 默认语言(en)不显示在URL中
+    const localePath = lang === 'en' ? '' : `/${lang}`;
+    alternates[lang] = `${url}${localePath}${path || ''}`;
+  });
+
+  return alternates;
+}
+
+/**
+ * 生成结构化数据 (JSON-LD)
+ * 简化版本 - 保留核心字段，删除冗余
  */
 export function generateStructuredData(
   title: string,
@@ -122,10 +113,9 @@ export function generateStructuredData(
   additionalData?: {
     date?: string
     category?: string
-    author?: string
   }
 ) {
-  const structuredData = {
+  const baseStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'Game',
     name: title,
@@ -152,23 +142,21 @@ export function generateStructuredData(
     }
   };
 
+  // 只在有数据时添加可选字段
   if (additionalData?.date) {
-    structuredData.datePublished = additionalData.date;
+    (baseStructuredData as any).datePublished = additionalData.date;
   }
 
   if (additionalData?.category) {
-    structuredData.gameCategory = additionalData.category;
+    (baseStructuredData as any).gameCategory = additionalData.category;
   }
 
-  if (additionalData?.author) {
-    structuredData.author.name = additionalData.author;
-  }
-
-  return structuredData;
+  return baseStructuredData;
 }
 
 /**
  * 获取关键词
+ * 简化版本 - 保留核心关键词
  */
 export function getKeywords(category?: string): string {
   const baseKeywords = [
@@ -179,144 +167,10 @@ export function getKeywords(category?: string): string {
     'word categorization',
     'brain game',
     'logic puzzle',
-    'word association',
-    'vocabulary game',
-    'trivia game'
+    'word association'
   ];
 
-  if (category) {
-    return [...baseKeywords, category].join(', ');
-  }
-
-  return baseKeywords.join(', ');
-}
-
-/**
- * 生成预连接配置
- */
-export function generatePreconnectConfig() {
-  const domains = [
-    'https://fonts.googleapis.com',
-    'https://fonts.gstatic.com',
-    'https://www.googletagmanager.com',
-    'https://www.google-analytics.com',
-    'https://googleads.g.doubleclick.net',
-    'https://www.googletagmanager.com',
-    'https://connect.facebook.net'
-  ];
-
-  return domains.map(domain => ({
-    rel: 'preconnect',
-    href: domain,
-    crossOrigin: 'anonymous'
-  }));
-}
-
-/**
- * 生成 DNS 预取配置
- */
-export function generateDnsPrefetchConfig() {
-  const domains = [
-    'https://fonts.googleapis.com',
-    'https://fonts.gstatic.com',
-    'https://www.googletagmanager.com',
-    'https://www.google-analytics.com'
-  ];
-
-  return domains.map(domain => ({
-    rel: 'dns-prefetch',
-    href: domain
-  }));
-}
-
-/**
- * 生成性能优化配置
- */
-export function generatePerformanceConfig() {
-  return {
-    // Next.js Image optimization
-    images: {
-      formats: ['image/webp', 'image/avif'],
-      deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-      imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-      dangerouslyAllowSVG: true,
-      contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    },
-    
-    // Font optimization
-    fonts: {
-      google: {
-        families: ['Inter:wght@400;500;600;700&display=swap'],
-      },
-    },
-    
-    // Script optimization
-    scripts: [
-      {
-        src: 'https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID',
-        strategy: 'lazyOnload',
-      },
-      {
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-        strategy: 'lazyOnload',
-      }
-    ],
-    
-    // Bundle analysis
-    experimental: {
-      optimizeCss: true,
-      optimizePackageImports: ['framer-motion', '@headlessui/react'],
-    },
-  };
-}
-
-/**
- * SEO 分析工具
- */
-export const seoAnalysis = {
-  // 检查元数据完整性
-  checkMetadata: (metadata: any) => {
-    const checks = {
-      title: metadata.title?.length > 0 && metadata.title.length <= 60,
-      description: metadata.description?.length > 0 && metadata.description.length <= 160,
-      keywords: metadata.keywords?.length > 0,
-      ogImage: metadata.openGraph?.images?.length > 0,
-      canonical: metadata.alternates?.canonical,
-      structuredData: metadata.other?.['structured-data']
-    };
-
-    return {
-      passed: Object.values(checks).every(v => v),
-      checks,
-      suggestions: generateSeoSuggestions(checks)
-    };
-  },
-
-  // 生成 SEO 建议
-  generateSeoSuggestions: (checks: any) => {
-    const suggestions = [];
-
-    if (!checks.title) suggestions.push('Add a title (60 characters max)');
-    if (!checks.description) suggestions.push('Add a description (160 characters max)');
-    if (!checks.keywords) suggestions.push('Add keywords for better search ranking');
-    if (!checks.ogImage) suggestions.push('Add Open Graph image');
-    if (!checks.canonical) suggestions.push('Add canonical URL');
-    if (!checks.structuredData) suggestions.push('Add structured data');
-
-    return suggestions;
-  }
-};
-
-// 辅助函数
-function generateSeoSuggestions(checks: any): string[] {
-  const suggestions = [];
-
-  if (!checks.title) suggestions.push('Add a title (60 characters max)');
-  if (!checks.description) suggestions.push('Add a description (160 characters max)');
-  if (!checks.keywords) suggestions.push('Add keywords for better search ranking');
-  if (!checks.ogImage) suggestions.push('Add Open Graph image');
-  if (!checks.canonical) suggestions.push('Add canonical URL');
-  if (!checks.structuredData) suggestions.push('Add structured data');
-
-  return suggestions;
+  return category
+    ? [...baseKeywords, category].join(', ')
+    : baseKeywords.join(', ');
 }

@@ -2,7 +2,7 @@
 
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { GameState, GameCategory, WordTile, Puzzle, GameAction } from '@/types/game';
+import { GameState, GameCategory, WordTile, Puzzle } from '@/types/game';
 
 interface GameStore {
   gameState: GameState | null;
@@ -26,12 +26,12 @@ interface GameStore {
 
 const createInitialGameState = (puzzle: Puzzle, gameMode: 'daily' | 'infinite'): GameState => {
   const words: WordTile[] = puzzle.categories.flatMap((category, categoryIndex) =>
-    category.words.map((word, wordIndex) => ({
-      id: `${categoryIndex}-${wordIndex}`,
-      text: word,
+    category.cards.map((card, cardIndex) => ({
+      id: `${categoryIndex}-${cardIndex}`,
+      text: card.content,
       isSelected: false,
       isFound: false,
-      groupId: category.id,
+      groupId: category.title,
     }))
   );
 
@@ -117,21 +117,21 @@ export const useGameStore = create<GameStore>()(
 
         // Check if the selected words form a valid category
         const foundCategory = categories.find(category =>
-          category.words.every(word => selectedWordTexts.includes(word)) &&
-          category.words.length === selectedWordTexts.length
+          category.cards.every(card => selectedWordTexts.includes(card.content)) &&
+          category.cards.length === selectedWordTexts.length
         );
 
-        if (foundCategory && !state.gameState.foundCategories.includes(foundCategory.id)) {
+        if (foundCategory && !state.gameState.foundCategories.includes(foundCategory.title)) {
           // Correct guess
           const updatedCategories = categories.map(cat =>
-            cat.id === foundCategory.id ? { ...cat, isFound: true } : cat
+            cat.title === foundCategory.title ? { ...cat, isFound: true } : cat
           );
 
           const updatedWords = words.map(word =>
             selectedWords.includes(word.id) ? { ...word, isFound: true, isSelected: false } : word
           );
 
-          const foundCategories = [...state.gameState.foundCategories, foundCategory.id];
+          const foundCategories = [...state.gameState.foundCategories, foundCategory.title];
           const isWon = foundCategories.length === categories.length;
 
           set({
